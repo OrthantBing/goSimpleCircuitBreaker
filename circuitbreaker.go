@@ -124,4 +124,9 @@ func main() {
 	_, err = testwithwrappedcircuitbreaker("Anton")
 	fmt.Println(err)
 
+	time.Sleep(5 * time.Second)
+
+	_, err = testwithwrappedcircuitbreaker("Anton")
+	fmt.Println(err)
+
 }
